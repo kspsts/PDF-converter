@@ -1,0 +1,96 @@
+/* Основные стили */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стилизация контейнера */
+.container {
+    width: 80%;
+    max-width: 900px; /* Максимальная ширина контейнера */
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Заголовок в контейнере */
+.container h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Стилизация кнопки */
+.button {
+    background-color: #d9534f; /* Цвет кнопки */
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c9302c; /* Цвет кнопки при наведении */
+}
+
+/* Стилизация поля выбора файла */
+.file-input {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    width: calc(100% - 2rem); /* Ширина поля с учетом padding */
+    margin-bottom: 1rem;
+}
+
+/* Стилизация выпадающего списка */
+.select {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Стилизация футера */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .button {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .file-input, .select {
+        padding: 0.4rem 0.8rem;
+    }
+}
