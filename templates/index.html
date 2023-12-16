@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Процессор</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Обработка PDF</h1>
+    <h2>Выберите действие для вашего файла</h2>
+    
+    <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" class="file-input">
+        
+        <select name="action" class="select">
+            <option value="compress">Сжать</option>
+            <option value="convert">Конвертировать в DOCX</option>
+            <option value="convert_to_jpeg">Конвертировать в JPEG</option>
+            <option value="convert_to_pdf">Конвертировать JPEG в PDF</option>
+        </select>
+        
+        <button type="submit" class="button">Загрузить</button>
+    </form>
+</div>
+
+<div class="footer">
+    <p>&copy; 2023 Ваша Компания</p>
+</div>
+
+</body>
+</html>
