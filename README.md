@@ -1,6 +1,6 @@
 # PDF Web App
 
-PDF Web App is a Flask-based web application for processing PDF documents. This application allows users to upload PDF files, process them, and potentially convert them into text or DOCX format.
+PDF Web App is a Flask-based web application for processing PDF documents. This application allows users to upload PDF files, and  convert them into text, image or DOCX format.
 
 ## Getting Started
 
@@ -17,12 +17,14 @@ To run this project, you will need:
 ### Installation
 
 1. Clone the repository:
-
-```git clone [repository-url]```
+```
+git clone git@github.com:kspsts/PDF-converter.git
+```
 
 2. Navigate to the project directory:
-
-```cd pdf-web-app```
+```
+cd pdf-web-app
+```
 
 3. Build and run the Docker container:
 ```
@@ -33,7 +35,10 @@ docker run -p 80:5000 pdf-web-app
 
 ## Usage
 
-Describe how to use your application after launching: how to upload files, what features are available, etc.
+Go to `localhost:80` and upload your PDF files or images
+
+![Main Page](https://disk.yandex.ru/i/Ps4HEbF1eakAwQ)
+![Main Page](https://disk.yandex.ru/i/kJcinr6cdN27PQ)
 
 ## Technologies
 
